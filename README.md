@@ -1,11 +1,15 @@
 # Lab 1
 
 ## Goals
+
 - setup environment
 
 ## Task
+
 Create project in GitHub with minimal code-quality checks and autodepoly
+
 ### Requirements
+
 - new repo in GitHub
 - initial empty commit
 - add ESlint (as strict as possible)

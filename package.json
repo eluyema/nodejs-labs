@@ -10,7 +10,9 @@
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "lint:check": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "eslint --ignore-path .gitignore . --ext .js,.ts --fix",
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prepare": "husky install"
   },
   "engines": {
     "npm": ">=8.0.0 <9.0.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-sonarjs": "^0.16.0",
+    "husky": "^8.0.1",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",

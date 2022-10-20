@@ -11,7 +11,8 @@ module.exports = {
     "plugin:n/recommended",
     "plugin:sonarjs/recommended",
     "plugin:import/recommended",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
   ],
   overrides: [],
   parserOptions: {

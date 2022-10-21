@@ -46,7 +46,6 @@ jobs:
           envs: GITHUB_SHA
           script: |
             docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}"
-            docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}
-            docker stop ${{ secrets.DOCKER_REPO }}
-            docker rm ${{ secrets.DOCKER_REPO }}
-            docker run --detach --name ${{ secrets.DOCKER_REPO }} -p 80:3000 ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}
+            docker system prune -a -f
+            docker stop ${{ secrets.DOCKER_USERNAME }}_${{ secrets.DOCKER_REPO }}
+            docker run --name ${{ secrets.DOCKER_USERNAME }}_${{ secrets.DOCKER_REPO }} -d --rm -p 80:3000 ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}:latest

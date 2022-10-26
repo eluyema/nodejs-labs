@@ -4,6 +4,7 @@ module.exports = {
     es2021: true,
   },
   parser: "@typescript-eslint/parser",
+  plugins: ["sonarjs"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",

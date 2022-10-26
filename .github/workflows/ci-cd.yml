@@ -8,6 +8,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.13.5
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.18.0"
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Check style format
+        run: pnpm format:check
+      - name: Check lint
+        run: pnpm lint:check
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx

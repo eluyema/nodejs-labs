@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  "@types/node": ^18.11.0
+  "@types/node": ^18.11.10
   "@typescript-eslint/eslint-plugin": ^5.40.1
   "@typescript-eslint/parser": ^5.40.1
   eslint: ^8.0.1
@@ -18,7 +18,7 @@ specifiers:
   typescript: "*"
 
 devDependencies:
-  "@types/node": 18.11.0
+  "@types/node": 18.11.17
   "@typescript-eslint/eslint-plugin": 5.40.1_ukgdydjtebaxmxfqp5v5ulh64y
   "@typescript-eslint/parser": 5.40.1_z4bbprzjrhnsfa24uvmcbu7f5q
   eslint: 8.25.0
@@ -31,7 +31,7 @@ devDependencies:
   husky: 8.0.1
   nodemon: 2.0.20
   prettier: 2.7.1
-  ts-node: 10.9.1_o6ib7qqltxpe7qrskddglns2ga
+  ts-node: 10.9.1_wwsmkokka4prbxaa6a6ljikhim
   typescript: 4.8.4
 
 packages:
@@ -191,10 +191,10 @@ packages:
       }
     dev: true
 
-  /@types/node/18.11.0:
+  /@types/node/18.11.17:
     resolution:
       {
-        integrity: sha512-IOXCvVRToe7e0ny7HpT/X9Rb2RYtElG1a+VshjwT00HxrM2dWBApHQoqsI6WiY7Q03vdf2bCrIGzVrkF/5t10w==,
+        integrity: sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==,
       }
     dev: true
 
@@ -2299,7 +2299,7 @@ packages:
       nopt: 1.0.10
     dev: true
 
-  /ts-node/10.9.1_o6ib7qqltxpe7qrskddglns2ga:
+  /ts-node/10.9.1_wwsmkokka4prbxaa6a6ljikhim:
     resolution:
       {
         integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==,
@@ -2321,7 +2321,7 @@ packages:
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.3
-      "@types/node": 18.11.0
+      "@types/node": 18.11.17
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
